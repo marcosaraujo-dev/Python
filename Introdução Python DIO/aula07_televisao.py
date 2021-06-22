@@ -18,22 +18,24 @@ class Televisao:
             self.canal -= 1
 
 
-# cria instância da classe televisão
-televisao = Televisao()
+# faz o controle para executar abaixo somente quando for chamada do mesmo arquivo
+if __name__ == '__main__':
+    # cria instância da classe televisão
+    televisao = Televisao()
 
-print('A televisão está ligada: {}'.format(televisao.ligada))
-televisao.power()
-print('A televisão está ligada: {}'.format(televisao.ligada))
-televisao.power()
-print('A televisão está ligada: {}'.format(televisao.ligada))
+    print('A televisão está ligada: {}'.format(televisao.ligada))
+    televisao.power()
+    print('A televisão está ligada: {}'.format(televisao.ligada))
+    televisao.power()
+    print('A televisão está ligada: {}'.format(televisao.ligada))
 
-# liga a televisão
-televisao.power()
+    # liga a televisão
+    televisao.power()
 
-print('Canal: {}'.format(televisao.canal))
-televisao.aumenta_canal()
-televisao.aumenta_canal()
-televisao.aumenta_canal()
-print('Canal: {}'.format(televisao.canal))
-televisao.diminui_canal()
-print('Canal: {}'.format(televisao.canal))
+    print('Canal: {}'.format(televisao.canal))
+    televisao.aumenta_canal()
+    televisao.aumenta_canal()
+    televisao.aumenta_canal()
+    print('Canal: {}'.format(televisao.canal))
+    televisao.diminui_canal()
+    print('Canal: {}'.format(televisao.canal))

@@ -42,12 +42,14 @@ class Calculadora:
         return self.valor_a / self.valor_b
 
 
-calc = Calculadora(10, 2)
+# controle para ser chamada essa execução abaixo apenas apenas quando for do proprioo arquivo
+if __name__ == '__main__':
+    calc = Calculadora(10, 2)
 
-print('Soma classe:{}'.format(calc.soma()))
-print('Subtração classe:{}'.format(calc.subtracao()))
-print('Multiplicação classe:{}'.format(calc.multiplicacao()))
-print('Divisão classe:{}'.format(calc.divisao()))
+    print('Soma classe:{}'.format(calc.soma()))
+    print('Subtração classe:{}'.format(calc.subtracao()))
+    print('Multiplicação classe:{}'.format(calc.multiplicacao()))
+    print('Divisão classe:{}'.format(calc.divisao()))
 
 
 # metodo 02 de criação de classe e utilização
@@ -68,9 +70,11 @@ class Calculadora02:
         return valor_a / valor_b
 
 
-calc = Calculadora02()
+# controle para ser chamada essa execução abaixo apenas apenas quando for do proprioo arquivo
+if __name__ == '__main__':
+    calc = Calculadora02()
 
-print('Soma classe 02:{}'.format(calc.soma(10, 7)))
-print('Subtração classe 02:{}'.format(calc.subtracao(15, 8)))
-print('Multiplicação classe 02:{}'.format(calc.multiplicacao(7, 9)))
-print('Divisão classe 02:{}'.format(calc.divisao(49, 7)))
+    print('Soma classe 02:{}'.format(calc.soma(10, 7)))
+    print('Subtração classe 02:{}'.format(calc.subtracao(15, 8)))
+    print('Multiplicação classe 02:{}'.format(calc.multiplicacao(7, 9)))
+    print('Divisão classe 02:{}'.format(calc.divisao(49, 7)))
